@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soat</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.container{
+			width: 1500px;
+			height: 1000px;
+			background-image: url("soat.png");
+			background-size: 1900px 1000px;
+			position: relative;
+		}
+		.strelka1{
+			width: 60px;
+			height: 250px;
+			position: absolute;
+			top: 210px;
+			left: 850px;
+			transform-origin: center bottom;
+            animation-name: bajar1;
+            animation-duration: 120s;
+            animation-iteration-count: infinite;
+		}
+		.block{
+			width: 100px;
+			height: 100px;
+			border-radius: 100%;
+			background-color: black;
+			position: absolute;
+			top: 390px;
+			left: 829px;
+		}
+		.strelka2{
+			width: 20px;
+			height: 300px;
+			position: absolute;
+			top: 161px;
+			left: 872px;
+			transform-origin: center bottom;
+            animation-name: bajar2;
+            animation-duration: 120s;
+            animation-iteration-count: infinite;
+            
+		}
+		.strelka3{
+			width: 30px;
+			height: 315px;
+			position: absolute;
+			top: 140px;
+			left: 868px;
+			transform-origin: center bottom;
+            animation-name: bajar3;
+            animation-duration: 120s;
+            animation-iteration-count: infinite;
+		}
+        @keyframes bajar1{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg)
+            }
+        }
+        @keyframes bajar2{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(4320deg)
+            }
+        }
+        @keyframes bajar3{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(51840deg);
+            }
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+		<img src="soat1.png" class="strelka1">
+		<img src="minut.png" class="strelka2">
+		<img src="strelka2.png" class="strelka3">
+		<div class="block"></div>
+	</div>
+</body>
+</html>
